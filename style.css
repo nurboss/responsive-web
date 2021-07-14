@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* ------------ Header Menu ------------------ */
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 80px;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-right: 36px;
+}
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+/* ------------ Header Login ------------------ */
+.btn{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #E02C6D;
+    padding: 10px 24px;
+    transition: 0.8s;
+}
+.btn:hover{
+    color: #2d25a0;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
+}
+.i-arrow{
+    margin-left: 10px;
+}
+.i-sign-in{
+    margin-right: 10px;
+}
+/* --------------- banner -------------- */
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d25a0;
+}
+.banner-title h1{
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #fff;
+}
+.banner-img img{
+    width: 556px;
+    height: 438px;
+}
+
+.watchlive{
+    margin-top: 27px;
+}
+/* ------------------- Players ------------------- */
+.all-players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+.player{
+    width: 330px;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15)
+}
+.player .player-img{
+    position: relative;
+    width: 100%;
+    height: 250px;
+}
+.player .player-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.player-details h2{
+    margin-top: 16px;
+    font-size: 28px;
+    font-weight: 700;
+
+}
+.player-details p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #6C6C6C;
+}
+/* ----------------- sec-banner --------------- */
+.sec-banner{
+    display: flex;
+    align-items: center;
+}
+.sec-bannre-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+}
+.sec-bannre-text p{
+    text-align: left;
+    margin-top: 10px;
+    color: #6C6C6C;
+}
+.sec-banner-img img{
+    margin-left: 100px;
+    width: 567px;
+    height: 427px;
+}
+/* --------------- Tickets ------------- */
+
+.tickets h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+.tickets p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    color: #6C6C6C;
+}
+.contentBox{
+    display: flex;
+}
+.contentBox .form{
+    width: 50%;
+}
+.contentBox .form-img{
+    width: 50%;
+}
+.contentBox .form-img img{
+    margin-left: 100px;
+    width: 80%;
+}
+.form {
+    margin-top: 80px;
+}
+.form .inputbx{
+    margin-bottom: 20px;
+}
+.form .inputbx input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #e6e6e6;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #E02C6D;
+}
+.form .inputbx input::placeholder{
+    color: #E02C6D;
+}
+.form .inputbx textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    font-size: 18px;
+    background: #e6e6e6;
+    font-weight: 300;
+    color: #E02C6D;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    resize: none;
+}
+.form .inputbx textarea::placeholder{
+    color: #E02C6D;
+}
+.form .inputbx input[type="submit"]{
+    width: 100px;
+    border-bottom: none;
+    background-color: #E02C6D;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ----------------- footer ------------- */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer-img{
+    margin-bottom: 20px;
+}
+.footer-img img{
+    width: 483px;
+    height: 110px;
+}
+.footer-icon ul{
+    display: flex;
+    margin-right: 20px 0;
+}
+.footer-icon ul li{
+    list-style: none;
+    margin: 0 15px;
+    width: 32px;
+    height: 32px;
+    background: #e7e7e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    transition: 0.2s;
+}
+.footer-icon ul li:hover{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.footer-icon ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #969bab;
+    transition: 0.2s;
+}
+.footer-icon ul li a:hover{
+    font-size: 25px;
+    color: #E02C6D;
+}
+.footer-text{
+    margin: 20px 0 80px 0;
+}
+/* ----------Media Queries-------------- */
+@media only screen and (max-width:688px){
+    *{
+        box-sizing: content-box;
+    }
+    header{
+        display: none;
+    }
+    nav{
+        display: none;        
+    }
+    section{
+        padding: 30px;
+        width: auto;
+    }
+    .banner{
+        justify-content: unset;
+        align-items: unset;
+        flex-direction: column;
+    }
+    .banner-title h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .banner-img img {
+        margin-top: 40px;
+        width: 300px;
+        height: 250px;
+    }
+    .player {
+        width: 250px;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+    
+    .sec-banner {
+        align-items: unset; 
+        flex-direction: column;
+    }
+    .sec-bannre-text h1{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .sec-banner-img img {
+        margin-top: 50px;
+        margin-left: 0px;
+        width: 280px;
+        height: 248px;
+        object-fit: cover;
+    }
+    .tickets h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+    }
+    .form .inputbx input {
+        width: 96%;
+    }
+    .form .inputbx textarea {
+        width: 96%;
+    }
+    .contentBox{
+        display: flex;
+        flex-direction: column;
+    }
+    .contentBox .form{
+        width: 100%;
+    }
+    .contentBox .form-img{
+        display: none;
+    }
+    .footer-img img {
+        margin-top: 80px;
+        width: 271px;
+        height: 63px;
+    }
+}
